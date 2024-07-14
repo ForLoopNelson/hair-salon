@@ -1,4 +1,4 @@
-Hair Salon Template
+# Hair Salon Template
 
 This is a React site template with functional routing and appointment booking using React, Vite, Node, and MongoDB. Note that the project contains a separate Client and Server.
 Installation
