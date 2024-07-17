@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,23 +12,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  background: url(../public/salon1.jpg) no-repeat 50% fixed;
+}
+
 a {
   font-weight: 600;
   font-size: larger;
-  color: #eee2e2;
+  color: #535bf2;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #e5e5f1;
 }
 
 body {
   margin: 0;
-  margin-left: 10px;
+
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: rgba(226, 226, 221, 0.5);
 }
 
 h1 {
@@ -40,14 +45,16 @@ h1 {
 nav {
   margin-left: 10px;
   color: white;
-  text-shadow: 1px 1px 8px #1a1a1a;
 }
 
 .img-fit {
   max-width: 160%;
   max-height: 100%;
-  border: 2px solid black;
-  background-position: 58%;
+  padding-bottom: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background: #1a1a1a;
+  opacity: 0.9;
 }
 
 button {
