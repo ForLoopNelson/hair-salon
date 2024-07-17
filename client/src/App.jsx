@@ -7,12 +7,7 @@ import background from "/salon1.jpg"
 const App = () => {
   return (
     <div>
-      <header
-        className="img-fit"
-        style={{
-          backgroundImage: `url(${background})`,
-        }}
-      >
+      <header className="img-fit">
         <h1 id="title">Holland Hair Salon</h1>
         <nav>
           <a href="/">Home</a> | <a href="/staff">Staff</a> |{" "}
