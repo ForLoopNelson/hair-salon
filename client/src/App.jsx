@@ -1,6 +1,5 @@
 import React from "react"
 import { Outlet } from "react-router-dom"
-import background from "/salon1.jpg"
 
 //Create a global header for all pages on the site, and render the target of the clicked route as the body of the page.
 
@@ -10,9 +9,25 @@ const App = () => {
       <header className="img-fit">
         <h1 id="title">Holland Hair Salon</h1>
         <nav>
-          <a href="/">Home</a> | <a href="/staff">Staff</a> |{" "}
-          <a href="/services">Services</a> | <a href="/booking">Booking</a> |{" "}
-          <a href="/admin">Admin</a>
+          <a href="/">
+            <span>Home</span>
+          </a>{" "}
+          |{" "}
+          <a href="/staff">
+            <span>Staff</span>
+          </a>{" "}
+          |{" "}
+          <a href="/services">
+            <span>Services</span>
+          </a>{" "}
+          |{" "}
+          <a href="/booking">
+            <span>Booking</span>
+          </a>{" "}
+          |{" "}
+          <a href="/admin">
+            <span>Admin</span>
+          </a>
         </nav>
       </header>
       <main>
