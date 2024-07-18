@@ -1,5 +1,5 @@
 :root {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto";
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,7 +13,7 @@
 }
 
 html {
-  background: url(../public/salon1.jpg) no-repeat 50% fixed;
+  background: url(/salon1.jpg) no-repeat 50% fixed;
 }
 
 a {
@@ -21,15 +21,18 @@ a {
   font-size: larger;
   color: #535bf2;
   text-decoration: inherit;
+  padding: 0 5px 0 5px;
 }
 a:hover {
   color: #e5e5f1;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 body {
   margin: 0;
-
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -38,13 +41,29 @@ body {
 
 h1 {
   font-size: 3.2em;
+  font-weight: 600;
   line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.2em;
+  font-family: "Poppins";
+  font-weight: 400;
+  border-bottom: black 2px solid;
+  max-width: 40%;
 }
 
 #title,
 nav {
   margin-left: 10px;
   color: white;
+}
+span {
+  font-size: 1.4rem;
+}
+
+span:hover {
+  border-bottom: #646cff 2px solid;
 }
 
 .img-fit {
@@ -58,13 +77,13 @@ nav {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  border-radius: 5px;
+  border: rgb(162, 136, 136) 2px solid;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #c7b068;
+  background-color: #e5e5f1;
   cursor: pointer;
   transition: border-color 0.25s;
 }
