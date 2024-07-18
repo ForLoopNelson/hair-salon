@@ -14,7 +14,7 @@ const Admin = () => {
   }, [])
 
   return (
-    <div>
+    <div className="admin">
       <h1>Admin Dashboard</h1>
       <ul>
         {bookings.map((booking) => (
