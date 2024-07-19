@@ -76,6 +76,11 @@ span:hover {
   opacity: 0.9;
 }
 
+.bookings {
+  list-style: circle;
+  font-size: 1.6rem;
+}
+
 button {
   border-radius: 5px;
   border: rgb(162, 136, 136) 2px solid;
