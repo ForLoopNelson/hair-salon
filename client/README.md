@@ -7,4 +7,6 @@
 3. add more content to the about page
    4.Fix margins. content and buttons sit too close to edge of page
 4. Mobile views
-5. Everything else
+5. check google console errors that are popping up
+
+Everything else
