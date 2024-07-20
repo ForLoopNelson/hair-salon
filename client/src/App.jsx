@@ -1,5 +1,6 @@
 import React from "react"
 import { Outlet } from "react-router-dom"
+import Footer from "./Footer"
 
 //Create a global header for all pages on the site, and render the target of the clicked route as the body of the page.
 
@@ -33,6 +34,7 @@ const App = () => {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </div>
   )
 }
