@@ -32,6 +32,9 @@ p {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0;
   place-items: center;
   min-width: 320px;
@@ -81,6 +84,23 @@ span:hover {
   font-size: 1.6rem;
 }
 
+#contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 160%;
+  border: 3px solid black;
+  border-radius: 10px;
+  background: #1a1a1a;
+  opacity: 0.9;
+  color: aliceblue;
+  margin-top: auto;
+}
+
+.pad {
+  padding: 0 20px;
+}
+
 button {
   border-radius: 5px;
   border: rgb(162, 136, 136) 2px solid;
@@ -88,12 +108,13 @@ button {
   font-size: 1.3em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #e5e5f1;
+  background-color: #ebe5e5;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  background: #6b70c6;
+  border-color: #1a1a1a;
 }
 button:focus,
 button:focus-visible {
