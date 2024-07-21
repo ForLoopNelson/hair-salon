@@ -1,5 +1,19 @@
 import React from "react"
 import ScrollAnimation from "react-animate-on-scroll"
+import "react-image-gallery/styles/css/image-gallery.css"
+import ImageGallery from "react-image-gallery"
+
+const images = [
+  {
+    original: "/imgs/hair-cut1.jpg",
+  },
+  {
+    original: "/imgs/hair-cut.jpg",
+  },
+  {
+    original: "/imgs/hair-wash.jpg",
+  },
+]
 
 const Home = () => {
   return (
@@ -7,6 +21,7 @@ const Home = () => {
       <header>
         <h2>Welcome to Our Hair Salon</h2>
         <p>Your go-to destination for all your hair care and styling needs.</p>
+
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
           voluptate sed odit magnam. Dicta eveniet maxime facere fuga
@@ -48,6 +63,7 @@ const Home = () => {
 
       <section id="about">
         <h2>About Us</h2>
+
         <p>
           Glamour Hair Salon has been serving the community for over 10 years.
           Our experienced and passionate team is dedicated to providing
@@ -57,7 +73,7 @@ const Home = () => {
         </p>
       </section>
 
-      <ScrollAnimation animateIn="fadeIn">
+      <ScrollAnimation animateIn="fadeInUp">
         <section id="services">
           <h2>Our Services</h2>
           <ul>
@@ -79,6 +95,9 @@ const Home = () => {
               day with our bridal and event styling services.
             </li>
           </ul>
+          <section id="gallery">
+            <ImageGallery items={images} additionalClass="img-gallery" />
+          </section>
         </section>
       </ScrollAnimation>
       <section id="team">
