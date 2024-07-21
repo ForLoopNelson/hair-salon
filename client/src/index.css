@@ -84,6 +84,18 @@ span:hover {
   font-size: 1.6rem;
 }
 
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-gallery {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
 #contact {
   display: flex;
   flex-direction: row;
