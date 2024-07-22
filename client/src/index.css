@@ -28,7 +28,8 @@ a:hover {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 
 body {
@@ -67,6 +68,16 @@ span {
 
 span:hover {
   border-bottom: #646cff 2px solid;
+}
+
+.labels {
+  margin-left: 10px;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+#email {
+  margin-left: 3px;
 }
 
 .img-fit {
@@ -123,6 +134,7 @@ button {
   background-color: #ebe5e5;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-left: 2px;
 }
 button:hover {
   background: #6b70c6;
