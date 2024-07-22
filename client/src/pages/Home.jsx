@@ -65,8 +65,8 @@ const Home = () => {
         <h2>About Us</h2>
 
         <p>
-          Glamour Hair Salon has been serving the community for over 10 years.
-          Our experienced and passionate team is dedicated to providing
+          Great Lakes Hair Salon has been serving the community for over 10
+          years. Our experienced and passionate team is dedicated to providing
           personalized service to each and every client. We believe that great
           hair starts with a great experience, and we strive to create a
           welcoming atmosphere where you can relax and enjoy your time with us.
