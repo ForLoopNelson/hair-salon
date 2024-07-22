@@ -54,7 +54,9 @@ const Booking = () => {
       <h2>Book an Appointment</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name: </label>
+          <label className="labels" htmlFor="name">
+            Name:{" "}
+          </label>
           <input
             id="name"
             type="text"
@@ -64,7 +66,9 @@ const Booking = () => {
           />
         </div>
         <div>
-          <label htmlFor="email">Email: </label>
+          <label className="labels" htmlFor="email">
+            Email:{" "}
+          </label>
           <input
             id="email"
             type="email"
@@ -80,7 +84,9 @@ const Booking = () => {
           <p>Selected Date: {date.toLocaleDateString()}</p>
         </div>
         <div>
-          <label htmlFor="service">Service: </label>
+          <label className="labels" htmlFor="service">
+            Service:{" "}
+          </label>
           <select
             id="service"
             value={service}
@@ -98,7 +104,9 @@ const Booking = () => {
           </select>
         </div>
         <div>
-          <label htmlFor="stylist">Stylist: </label>
+          <label className="labels" htmlFor="stylist">
+            Stylist:{" "}
+          </label>
           <select
             id="stylist"
             value={stylist}
