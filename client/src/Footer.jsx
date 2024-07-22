@@ -5,7 +5,7 @@ const Footer = () => {
     <footer id="contact">
       <p className="pad">
         <span>Visit Us</span> <br />
-        Glamour Hair Salon is conveniently located in the heart of downtown:
+        Great Lakes Hair Salon is conveniently located in the heart of downtown:
         <br />
         123 Main Street, Suite 456
         <br />
@@ -15,15 +15,15 @@ const Footer = () => {
       <p className="pad">
         Phone: (123) 456-7890
         <br />
-        Email: info@glamourhairsalon.com
+        Email: info@greallakeshairsalon.com
       </p>
       <p className="pad">
         Follow us on social media for the latest updates and special offers:
         <br />
         <ul>
-          <li>Facebook: @GlamourHairSalon</li>
-          <li>Instagram: @GlamourHairSalon</li>
-          <li>Twitter: @GlamourHair</li>
+          <li>Facebook: @GreatLakesHairSalon</li>
+          <li>Instagram: @GreatLakesHairSalon</li>
+          <li>Twitter: @GreatLakesHair</li>
         </ul>
       </p>
     </footer>
