@@ -13,7 +13,8 @@
 }
 
 html {
-  background: url(/salon1.jpg) no-repeat 50% fixed;
+  background-color: #d6d0c5;
+  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
 }
 
 a {
@@ -99,12 +100,7 @@ span:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.img-gallery {
-  width: 400px;
-  height: auto;
-  object-fit: contain;
+  margin-left: 350px;
 }
 
 #contact {
