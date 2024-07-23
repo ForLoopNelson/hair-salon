@@ -1,18 +1,16 @@
 import React from "react"
 import ScrollAnimation from "react-animate-on-scroll"
 import "react-image-gallery/styles/css/image-gallery.css"
-import ImageGallery from "react-image-gallery"
+import { ImageGallery } from "react-image-grid-gallery"
 
 const images = [
-  {
-    original: "/imgs/hair-cut1.jpg",
-  },
-  {
-    original: "/imgs/hair-cut.jpg",
-  },
-  {
-    original: "/imgs/hair-wash.jpg",
-  },
+  { alt: "women getting hair cut", src: "/imgs/hair-cut1.jpg" },
+  { alt: "women getting hair cut", src: "/imgs/hair-cut.jpg" },
+  { alt: "woman getting hair washed", src: "/imgs/hair-wash.jpg" },
+  { alt: "image of hair and scissors", src: "/imgs/hairScissor.jpg" },
+  { alt: "interior of a salon", src: "/imgs/salon1.jpg" },
+  { alt: "image of curly long hair", src: "/imgs/curly-hair.jpg" },
+  { alt: "stylists cutting hair", src: "/imgs/stylist.jpg" },
 ]
 
 const Home = () => {
@@ -20,59 +18,37 @@ const Home = () => {
     <div>
       <header>
         <h2>Welcome to Our Hair Salon</h2>
-        <p>Your go-to destination for all your hair care and styling needs.</p>
 
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-          voluptate sed odit magnam. Dicta eveniet maxime facere fuga
-          repudiandae nisi labore autem fugiat aperiam quos aut totam nihil,
-          repellat voluptatum consequuntur. Molestiae at explicabo tempore
-          corporis magnam vel. Voluptas, recusandae at, magnam rem illo ullam
-          quo aliquam ad dignissimos distinctio, corporis esse sint nulla.
-          Corporis, voluptatem? Corporis excepturi assumenda animi, quae quos
-          consequatur reprehenderit velit inventore! Totam vero recusandae
-          ratione cum facere eos. Eum tempora necessitatibus, odit non quaerat
-          hic et ipsa quibusdam earum odio, quis, sint iure deleniti delectus
-          dolor at distinctio mollitia ratione impedit suscipit cupiditate
-          repellat assumenda ipsum numquam? Reiciendis, earum. Numquam
-          distinctio et sint veritatis quos, perspiciatis, eaque ratione iure
-          eos consectetur accusamus maiores amet facere velit deserunt illo
-          aspernatur provident odio? Facilis iste tenetur possimus esse,
-          sapiente modi porro maxime quae placeat. Odit facilis doloribus
-          doloremque, eos hic cumque aspernatur rem officia deserunt quo enim
-          quas eum labore voluptatem? Est odit eos perferendis laudantium
-          molestiae atque ipsa sunt qui consequatur voluptate! Deserunt, cum.
-          Amet saepe perspiciatis dignissimos possimus voluptates ratione
-          beatae, quod rem magni cumque quo quia dicta. Nam reprehenderit
-          tempore rem ea voluptatibus, quam ipsa ad, nesciunt debitis blanditiis
-          dolorem. Laudantium molestias libero laboriosam sequi, non cupiditate
-          sit quis sint commodi esse perferendis? Enim accusantium deleniti
-          fugiat nesciunt temporibus, perferendis pariatur quidem ut aliquam
-          architecto dolorum odio delectus laboriosam suscipit molestias
-          dolorem. Necessitatibus corrupti molestiae facere voluptatibus
-          quisquam doloribus quae hic delectus cumque, provident eligendi
-          dolores nemo inventore ratione cum accusamus odio? Id beatae molestiae
-          voluptates, repellat recusandae molestias laudantium reiciendis aut
-          voluptatibus cupiditate aspernatur inventore veniam eligendi velit
-          deleniti! Ducimus sapiente qui ex! Molestiae cumque nemo quo numquam
-          nihil maiores repellat, expedita recusandae ducimus modi. Earum sequi
-          officiis reiciendis perferendis quam, sed fugiat sapiente, alias
-          itaque veniam porro tempora, non eos minima eveniet.
+          {" "}
+          <strong>
+            Your go-to destination for all your hair care and styling needs.
+          </strong>
         </p>
       </header>
-
-      <section id="about">
-        <h2>About Us</h2>
-
-        <p>
-          Great Lakes Hair Salon has been serving the community for over 10
-          years. Our experienced and passionate team is dedicated to providing
-          personalized service to each and every client. We believe that great
-          hair starts with a great experience, and we strive to create a
-          welcoming atmosphere where you can relax and enjoy your time with us.
-        </p>
+      <section id="gallery">
+        <ImageGallery
+          imagesInfoArray={images}
+          columnCount={4}
+          columnWidth={220}
+          gapSize={40}
+          additionalClass="img-gallery"
+        />
       </section>
+      <ScrollAnimation animateIn="fadeInUp">
+        <section id="about">
+          <h2>About Us</h2>
 
+          <p>
+            Great Lakes Hair Salon has been serving the community for over 10
+            years. Our experienced and passionate team is dedicated to providing
+            personalized service to each and every client. We believe that great
+            hair starts with a great experience, and we strive to create a
+            welcoming atmosphere where you can relax and enjoy your time with
+            us.
+          </p>
+        </section>
+      </ScrollAnimation>
       <ScrollAnimation animateIn="fadeInUp">
         <section id="services">
           <h2>Our Services</h2>
@@ -95,9 +71,6 @@ const Home = () => {
               day with our bridal and event styling services.
             </li>
           </ul>
-          <section id="gallery">
-            <ImageGallery items={images} additionalClass="img-gallery" />
-          </section>
         </section>
       </ScrollAnimation>
       <section id="team">
