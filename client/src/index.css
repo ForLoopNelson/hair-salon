@@ -58,6 +58,37 @@ h2 {
   max-width: 40%;
 }
 
+.landing {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: url(/imgs/salon1.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.landing-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a1a1a;
+}
+
+.landing-nav nav {
+  margin-top: 20px;
+}
+
+.landing-nav a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+.landing-nav span:hover {
+  border-bottom: #646cff 2px solid;
+}
+
 #title,
 nav {
   margin-left: 10px;
