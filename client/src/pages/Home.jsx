@@ -33,6 +33,7 @@ const Home = () => {
           columnWidth={220}
           gapSize={40}
           additionalClass="img-gallery"
+          lazyload={true}
         />
       </section>
       <ScrollAnimation animateIn="fadeInUp">
