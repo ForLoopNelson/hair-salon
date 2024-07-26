@@ -26,16 +26,6 @@ const Home = () => {
           </strong>
         </p>
       </header>
-      <section id="gallery">
-        <ImageGallery
-          imagesInfoArray={images}
-          columnCount={4}
-          columnWidth={220}
-          gapSize={40}
-          additionalClass="img-gallery"
-          lazyload={true}
-        />
-      </section>
       <ScrollAnimation animateIn="fadeInUp">
         <section id="about">
           <h2>About Us</h2>
