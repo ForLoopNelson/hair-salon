@@ -13,10 +13,9 @@ import "./index.css"
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
     <Routes>
-      {/*Set the default route to render the App component containing the header along with the target page*/}
-      <Route path="/" element={<App />}>
-        {/*Set global routes with Home as the default Outlet route*/}
-        <Route index element={<Home />} />
+      <Route path="/" element={<Landing />} />
+      <Route path="/app" element={<App />}>
+        <Route path="home" element={<Home />} />
         <Route path="staff" element={<Staff />} />
         <Route path="services" element={<Services />} />
         <Route path="booking" element={<Booking />} />
