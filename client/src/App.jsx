@@ -14,19 +14,19 @@ const App = () => {
             <span>Home</span>
           </a>{" "}
           |{" "}
-          <a href="/staff">
+          <a href="/app/staff">
             <span>Staff</span>
           </a>{" "}
           |{" "}
-          <a href="/services">
+          <a href="/app/services">
             <span>Services</span>
           </a>{" "}
           |{" "}
-          <a href="/booking">
+          <a href="/app/booking">
             <span>Booking</span>
           </a>{" "}
           |{" "}
-          <a href="/admin">
+          <a href="/app/admin">
             <span>Admin</span>
           </a>
         </nav>
