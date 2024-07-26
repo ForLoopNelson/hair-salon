@@ -71,22 +71,76 @@ h2 {
 
 .landing-nav {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   color: #1a1a1a;
+  font-family: "Poppins";
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgb(236, 228, 228);
+  padding-top: 80px;
 }
 
-.landing-nav nav {
+.landing-nav h1 {
+  font-size: 6.5em;
+  border: 2px solid #1a1a1a;
+  background: rgba(235, 229, 229, 0.5);
+}
+/* .landing-nav nav {
   margin-top: 20px;
 }
 
-.landing-nav a {
-  font-size: 1.5rem;
-  margin: 0 10px;
+.landing-nav Link:hover {
+  border-bottom: #646cff 2px solid;
+} */
+
+.btn-class {
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, #0f121a, #36383a, #545961);
+  color: #fff;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(196, 189, 238, 0.5);
+  overflow: hidden;
+  padding-bottom: 15px;
+  margin-top: -10px;
 }
 
-.landing-nav span:hover {
-  border-bottom: #646cff 2px solid;
+.btn-class span {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 17px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 34px;
+  transform: translateY(-50%);
+}
+
+.btn-class:hover .btn-text-one {
+  top: -100%;
+  border-bottom: none;
+}
+
+.btn-class:hover .btn-text-two {
+  top: 50%;
+  border-bottom: none;
 }
 
 #title,
