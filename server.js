@@ -10,7 +10,7 @@ app.use(express.json())
 mongoose
   .connect(
     `mongodb+srv://Cnelson83:${process.env.MONGO_PASS}@cluster0.sfeelbt.mongodb.net/hairSalon?retryWrites=true&w=majority&appName=Cluster0`
-  )
+  ) 
   .then(() => {
     console.log("Connected to MongoDB")
   })
