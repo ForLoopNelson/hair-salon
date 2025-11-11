@@ -225,3 +225,26 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+
+/* Mobile Queries ____________________________________________________________________________________ */
+
+@media screen and (max-width: 530px) {
+  #title {
+    font-size: 29px;
+    margin-left: 55px;
+    
+  }
+
+  #navBar {
+    margin-left: 20px;
+  }
+
+  #home {
+    margin-left: 20px;
+  }
+
+  #service-list {
+    border: 2px solid red;
+  }
+}
