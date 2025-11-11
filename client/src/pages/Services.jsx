@@ -14,7 +14,6 @@ const Services = () => {
           exceptional service and results.
         </p>
       </header>
-
       <section id="haircuts-styling">
         <h2>Haircuts and Styling</h2>
         <p>
