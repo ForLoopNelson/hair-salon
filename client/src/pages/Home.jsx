@@ -15,7 +15,7 @@ const images = [
 
 const Home = () => {
   return (
-    <div>
+    <div id="home">
       <header>
         <h2>Welcome to Our Hair Salon</h2>
 
