@@ -9,7 +9,7 @@ const App = () => {
     <div>
       <header className="img-fit">
         <h1 id="title">Great Lakes Hair Salon</h1>
-        <nav>
+        <nav id="navBar">
           <a href="/">
             <span>Home</span>
           </a>{" "}
